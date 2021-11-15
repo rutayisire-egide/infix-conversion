@@ -46,12 +46,10 @@ int main(int argc, char const *argv[])
     while (*element != '\0')
     {   
         if (isalnum(*element))
-        {
             printf("%c",*element);
-        }else if (*element == '(')
-        {   
+        else if (*element == '(') 
             push(*element);
-        }else if (*element == ')')
+        else if (*element == ')')
         {   
             do
             {
